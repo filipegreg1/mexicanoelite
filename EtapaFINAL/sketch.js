@@ -85,8 +85,6 @@ function setup(){
   frameRate(60); 
   pedramuro();
   nuvem();
-  mexicano.setVolume(0.1);
-  mexicano.play();
 }
 
 function draw() {
@@ -108,6 +106,8 @@ function draw() {
     }
     text("Aperte ENTER para começar!",TextoX,310);
     if (keyIsDown(ENTER) ) {
+      mexicano.setVolume(0.1);
+      mexicano.play();
       tela = 1;
     }
   }
